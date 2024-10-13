@@ -31,11 +31,11 @@ def test_saucedeme():
     driver.find_element(By.CSS_SELECTOR, '#checkout').click()
 
     f_name = driver.find_element(By.CSS_SELECTOR, '#first-name')
-    f_name.send_keys("Alex")
+    f_name.send_keys("Galina")
     l_name = driver.find_element(By.CSS_SELECTOR, '#last-name')
-    l_name.send_keys("Trofimov")
+    l_name.send_keys("Sergeevna")
     l_name = driver.find_element(By.CSS_SELECTOR, '#postal-code')
-    l_name.send_keys("153000")
+    l_name.send_keys("675000")
     driver.find_element(By.CSS_SELECTOR, '#continue').click()
 
     total = driver.find_element(By.CSS_SELECTOR, '.summary_total_label').text
